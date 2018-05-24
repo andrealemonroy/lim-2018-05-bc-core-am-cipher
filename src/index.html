@@ -6,19 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+      <header>
+        <h1>CIFRADO CESAR</h1>
+      </header>
+      <section id = "principal" class="principal">
+        <div id = "encrypt" class="contenedor">
+              <form id="datos1" name="datos1">
+                    <h2>Cadena original</h2>
+                    <textarea id="textOne" name="textOne" rows="10" cols="40" placeholder="Ingrese una cadena en mayúsculas"></textarea>
+                    <input id="boton3" class="borrar" type="button" value="Borrar cadena">
+              </form>
+        </div>
+        <div id = "botones" class="botones">
+              <form id="datos2" name="datos2">
+                      <h2>Ingrese número de saltos</h2>
+                      <input id="numero1" name="numero1" type="number"  min="1" placeholder="offset" >
+                      <input id="boton1" class="boton" type="button" value="Encriptar">
+                      <input id="boton2" class="boton" type="button" value="Desencriptar">
+              </form>
+        </div>      
+        <div id = "decrypt" class="contenedor">
+              <form id="datos2" name="datos2">
+                     <h2>Cadena a descifrar</h2>
+                    <textarea id="textTwo" name="textOne" rows="10" cols="40" placeholder="Ingrese una cadena en mayúsculas"></textarea>
+                    <input id="boton4" class="borrar" type="button" value="Borrar cadena">
+              </form>
+        </div>      
+      </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    <div id="container" name="container"></div>
-    <form id="data">
-      <p>Texto a encriptar</p>
-      <input id="textOne" type="text">
-    <input id="offset" type="text"></br>
-    <input id="buttonEncrypt" type="button" value="ENCRIPTAR" onclick="encrypt()">
-
-    <p>Texto a desencriptar</p>
-      <input id="textTwo" type="text">
-      <input id="buttonDecrypt" type="button" value="DESENCRIPTAR" onclick="decrypt()">
-    </form>
   </body>
 </html>
