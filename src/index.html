@@ -9,27 +9,28 @@
       <header>
         <h1>CIFRADO CESAR</h1>
       </header>
-      <section id = "principal" class="principal">
-        <div id = "encrypt" class="contenedor">
-              <form id="datos1" name="datos1">
-                    <h2>Cadena original</h2>
-                    <textarea id="textOne" name="textOne" rows="10" cols="40" placeholder="Ingrese texto"></textarea>
-                    <input id="clearOne" class="borrar" type="button" value="Borrar texto">
+      <section id = "principal">
+        <div id = "encrypt">
+              <form id="dataOne">
+                    <h2>Ingrese texto a encriptar!</h2>
+                    <textarea id="textOne" placeholder="Ingrese texto"></textarea>
+                    <input id="clearOne" type="button" value="Borrar">
               </form>
         </div>
-        <div id = "botones" class="botones">
-              <form id="datos2" name="datos2">
-                      <h2>Ingrese número de saltos</h2>
-                      <input id="offset" name="offset" type="number"  min="1" placeholder="offset" >
-                      <input id="buttonEncrypt" class="boton" type="button" value="Encriptar">
-                      <input id="buttonDecrypt" class="boton" type="button" value="Desencriptar">
+        <div id = "offsetContainer" >
+              <form id="dataOffset">
+                      <h2>Ingrese offset</h2>
+                      <input id="offset" type="number"  min="1" placeholder="offset" >
+                      <input id="buttonEncrypt" type="button" value="Encriptar">
+
               </form>
         </div>      
-        <div id = "decrypt" class="contenedor">
-              <form id="datos2" name="datos2">
-                     <h2>Cadena a descifrar</h2>
-                    <textarea id="textTwo" name="textOne" rows="10" cols="40" placeholder="Ingrese una cadena en mayúsculas"></textarea>
-                    <input id="clearTwo" class="borrar" type="button" value="Borrar cadena">
+        <div id = "decrypt" >
+              <form id="dataTwo">
+                     <h2>Texto encriptado</h2>
+                    <textarea id="textTwo" placeholder="Ingrese texto"></textarea>
+                    <input id="buttonDecrypt" type="button" value="Desencriptar">
+                    <input id="clearTwo" type="button" value="Borrar">
               </form>
         </div>      
       </section>

@@ -1,31 +1,28 @@
-document.getElementById("buttonEncrypt").addEventListener("click", encrypt);
-document.getElementById("buttonDecrypt").addEventListener("click", decrypt);
-document.getElementById("clearOne").addEventListener("click", clearOne);
-document.getElementById("clearTwo").addEventListener("click", clearTwo);
-function clearOne() {
-  document.getElementById("textOne").value="";
-} 
-function clearTwo() {
-  document.getElementById("textTwo").value="";
-} 
+
+window.cipher = {
+    encrypt : encrypt,
+    decrypt : decrypt,
+};
 function onlyText(){
-  var out = '';
-  var string = document.getElementById("textOne").value;
-  var filtro = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  for (var i=0; i<string.length; i++)
-     if (filtro.includes(string.charAt(i))) 
-   out += string.charAt(i);
- document.getElementById("textOne").value=out;
-}
-function onlyText2(){
-  var out = '';
-  var string = document.getElementById("textTwo").value;
-  var filtro = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  for (var i=0; i<string.length; i++)
-     if (filtro.includes(string.charAt(i))) 
-   out += string.charAt(i);
- document.getElementById("textTwo").value=out;
-}
+    var out = '';
+    var string = document.getElementById("textOne").value;
+    var filtro = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    for (var i=0; i<string.length; i++)
+       if (filtro.includes(string.charAt(i))) 
+     out += string.charAt(i);
+   document.getElementById("textOne").value=out;
+  }
+
+  function onlyText2(){
+    var out = '';
+    var string = document.getElementById("textTwo").value;
+    var filtro = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    for (var i=0; i<string.length; i++)
+       if (filtro.includes(string.charAt(i))) 
+     out += string.charAt(i);
+   document.getElementById("textTwo").value=out;
+  }
+
 function encrypt() {
   onlyText();
   texto=document.getElementById("textOne").value;
