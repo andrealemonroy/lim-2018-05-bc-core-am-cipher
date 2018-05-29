@@ -3,38 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body >
       <header>
         <h1>CIFRADO CESAR</h1>
+          
       </header>
       <section id = "principal">
-        <div id = "encrypt">
-              <form id="dataOne">
-                    <h2>Ingrese texto a encriptar!</h2>
-                    <textarea id="textOne" placeholder="Ingrese texto"></textarea>
-                    <input id="clearOne" type="button" value="Borrar">
+        <div id = "encode">
+              <form id="dataOne"> 
+                    <select id="list" name="text">
+                      <option value="value1">DESENCRIPTAR</option> 
+                      <option value="value2" selected>ENCRIPTAR</option>
+                    </select>
+                    <input id="offset" type="number" min="1" max="100" step = 1 placeholder="offset" >
+                    <input id="buttonStart" type="button" value="->">
+                    <div id="space"></div>
+                    <textarea id="textOne" class="inputText" placeholder="Ingrese texto"></textarea>
               </form>
         </div>
         <div id = "offsetContainer" >
               <form id="dataOffset">
-                      <h2>Ingrese offset</h2>
-                      <input id="offset" type="number"  min="1" placeholder="offset" >
-                      <input id="buttonEncrypt" type="button" value="Encriptar">
-
               </form>
         </div>      
-        <div id = "decrypt" >
+        <div id = "decode">
               <form id="dataTwo">
-                     <h2>Texto encriptado</h2>
-                    <textarea id="textTwo" placeholder="Ingrese texto"></textarea>
-                    <input id="buttonDecrypt" type="button" value="Desencriptar">
-                    <input id="clearTwo" type="button" value="Borrar">
+                     <h2 id="result"> </h2>
+                    <textarea id="textTwo" readonly class="inputText" placeholder="Aquí verá el resultado"></textarea>
               </form>
+              <input id="clear" type="button" class="button" value="Borrar">
         </div>      
       </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
+  <footer>
+
+  </footer>
 </html>
