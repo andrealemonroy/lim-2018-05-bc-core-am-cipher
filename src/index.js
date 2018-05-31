@@ -18,5 +18,6 @@ document.getElementById('buttonStart').addEventListener('click', () => {
 document.getElementById('clear').addEventListener('click', () => {
     document.getElementById('textOne').value = '';
     document.getElementById('textTwo').value = '';
+    document.getElementById('result').innerHTML= '';
 })
 
