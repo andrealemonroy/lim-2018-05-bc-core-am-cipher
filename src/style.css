@@ -4,14 +4,13 @@ body{
     margin-top:0;
 }
 header{
-
     width: 100%;
     height: 70px;
 
 }
 #title{
     background-color:	#FFEFD5;
-    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Righteous', cursive;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -32,17 +31,20 @@ header{
     max-height: 300px;
     border-radius: 15px;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 #buttonStart{
     width: 6%;
     height: 30px;
     border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
 
 }
 .button {
     padding: 1%;
     margin-top: 1%;
     margin-right:18%;
+    margin-bottom:2%;
     width: 20%;
     height: 30px;
     background-color:	#FFFFFF;
@@ -54,6 +56,7 @@ header{
 #offset{
     width: 15%;
     height: 25px;
+    font-family: 'Open Sans', sans-serif;
 }
 footer
 {
