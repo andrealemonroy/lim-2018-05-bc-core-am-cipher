@@ -10,11 +10,13 @@ window.cipher = {
             else if (numberLetter >= 97 && numberLetter <= 122) {
                 output += String.fromCharCode((numberLetter - 97 + offset) % 26 + 97);
             }
+            else 
+            output+=String.fromCharCode(numberLetter);
             }
         return output;
     },
 
-    decode(offset, text) {
+    decode(offset, text) {debugger
         let output = '';
         for (let i = 0; i < text.length; i++) {
             let numberLetter = text.charCodeAt(i);
@@ -33,6 +35,8 @@ window.cipher = {
                 }
                 else output += String.fromCharCode(numberLetter - offset % 26);
             }
+            else 
+            output+=String.fromCharCode(numberLetter);
             }
         return output;
 }
