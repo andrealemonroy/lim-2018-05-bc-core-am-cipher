@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Montserrat|Open+Sans|Raleway|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Montserrat|Open+Sans|Raleway|Righteous|Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header>
       <h1 id="title">ENCRIPTA TU MENSAJE</h1>
-
+      <img id="wapp" src="labo.png"/>
   </header>
-  <section id="principal">
+  <section id="container">
     <div id="encrypt">
       <form id="dataOne">
         <select id="list" name="text">
@@ -23,7 +21,7 @@
         </select>
         <input id="offset" type="number" min="1" step="1" placeholder="offset">
         <input id="buttonStart" type="button" value="->">
-        <div id="space"></div>
+        <input id="buttonWithCipher" type="button" value="FIJO">
         <textarea id="textOne" class="inputText" placeholder="Ingrese texto"></textarea>
       </form>
     </div>
@@ -41,5 +39,4 @@
 <footer>
   <p>Creado por Andrea Monroy</p>
 </footer>
-
 </html>
