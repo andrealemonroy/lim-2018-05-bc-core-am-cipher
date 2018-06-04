@@ -15,7 +15,7 @@ descifrarlo. Así que ahora te toca aplicar tus superpoderes 😎
 
 # Encriptador de mensajes
 
-## Introduction
+## Introducción
 
 Para que nadie más que tú pueda entender tus mensajes; en esta página podrás codificar/encriptar tus mensajes y también decodificarlos/desencriptarlos.
 
