@@ -4,14 +4,19 @@ document.getElementById('buttonStart').addEventListener('click', () => {
     const opcion = document.getElementById('list');
     let value = opcion.options[opcion.selectedIndex].value;
     if (value == 'value1') {
-        let result = document.getElementById('result')
-        result.innerHTML = 'Texto desencriptado';
         document.getElementById('textTwo').value = cipher.decode(offset, encodeText);
+        if(offset>0){
+            let result = document.getElementById('result')
+            result.innerHTML = 'Texto desencriptado';
+        }
     }
     else {
+
+        document.getElementById('textTwo').value = cipher.encode(offset, encodeText);
+        if(offset>0){
         let result = document.getElementById('result')
         result.innerHTML = 'Texto encriptado';
-        document.getElementById('textTwo').value = cipher.encode(offset, encodeText);
+        }
     }
   })
   document.getElementById('buttonWithCipher').addEventListener('click', () => {

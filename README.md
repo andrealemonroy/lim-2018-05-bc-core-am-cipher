@@ -19,12 +19,12 @@ descifrarlo. Así que ahora te toca aplicar tus superpoderes 😎
 
 Para que nadie más que tú pueda entender tus mensajes; en esta página podrás codificar/encriptar tus mensajes y también decodificarlos/desencriptarlos.
 
-Para usarlo seguimos estos pasos:
-1-Introducimos un texto en el primer cuadro donde dice INGRESE TEXTO
-2-Seleccionamos ENCRIPTAR
-3-Elegimos un offset(los espacios que se desplazará) 
-4-Le damos click al botón ->
-5-En el segundo cuadro donde dice AQUÍ VERÁ EL RESULTADO, nos dará nuestro texto codificado/encriptado :)
+Para usarlo seguimos estos pasos:<br>
+1-Introducimos un texto en el primer cuadro donde dice INGRESE TEXTO<br>
+2-Seleccionamos ENCRIPTAR<br>
+3-Elegimos un offset(los espacios que se desplazará) o usamos el OFFSET FIJO que es 33, para esto hacer clic en FIJO <br>
+4-Le damos click al botón -><br>
+5-En el segundo cuadro donde dice AQUÍ VERÁ EL RESULTADO, nos dará nuestro texto codificado/encriptado :)<br>
 
 Si queremos decodificar/desencriptar un texto hacemos lo mismo, solo que en vez de seleccionar ENCRIPTAR seleccionamos DESENCRIPTAR.
 

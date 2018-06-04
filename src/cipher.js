@@ -9,8 +9,9 @@ window.cipher = {
             else if (numberLetter >= 97 && numberLetter <= 122) {
                 output += String.fromCharCode((numberLetter - 97 + offset) % 26 + 97);
             }
-            else
-                output += String.fromCharCode(numberLetter);
+            else if(offset>0){
+                output += String.fromCharCode(numberLetter);   
+            }
         }
         return output;
     },
@@ -34,8 +35,9 @@ window.cipher = {
                 }
                 else output += String.fromCharCode(numberLetter - offset % 26);
             }
-            else
-                output += String.fromCharCode(numberLetter);
+            else if(offset>0){
+                output += String.fromCharCode(numberLetter);   
+            }
         }
         return output;
     },
